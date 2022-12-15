@@ -1,0 +1,39 @@
+<mxfile host="65bd71144e">
+    <diagram id="ZjQEyEmnNANOT1Agxdwf" name="第1頁">
+        <mxGraphModel dx="1092" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="SWAG&lt;br&gt;(nginx internal)" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=#005700;fillColor=#008a00;shape=mxgraph.azure.load_balancer_generic;pointerEvents=1;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="366" y="300" width="117.5" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Frontend" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/generic_server.svg;imageBackground=none;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="420" width="118" height="210.71" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Backend" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/generic_server.svg;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="420" width="118" height="210.71" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="curved=1;endArrow=classic;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;strokeWidth=4;startArrow=classic;startFill=1;" edge="1" parent="1" source="3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="420" as="sourcePoint"/>
+                        <mxPoint x="400" y="110" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="400" y="410"/>
+                            <mxPoint x="400" y="370"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="" style="curved=1;endArrow=classic;html=1;exitX=0.339;exitY=0.099;exitDx=0;exitDy=0;strokeWidth=4;startArrow=classic;startFill=1;exitPerimeter=0;" edge="1" parent="1" source="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="335.0968127879703" y="440.86653990562445" as="sourcePoint"/>
+                        <mxPoint x="440" y="120" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="470" y="400"/>
+                            <mxPoint x="440" y="370"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

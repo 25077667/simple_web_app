@@ -1,6 +1,6 @@
-[submodule "Django_cpp"]
-	path = Django_cpp
-	url = git@github.com:25077667/Django_cpp.git
-[submodule "simple_backend_cpp"]
-	path = simple_backend_cpp
-	url = git@github.com:25077667/simple_backend_cpp.git
+[submodule "frontend"]
+path = frontend
+url = https://github.com/25077667/Django_cpp.git
+[submodule "backend"]
+path = backend
+url = https://github.com/25077667/simple_backend_cpp.git
