@@ -1,0 +1,169 @@
+version: "3.8"
+services:
+  cyshirc-nginx:
+    image: lscr.io/linuxserver/nginx:latest
+    container_name: cyshirc-nginx
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Taipei
+    volumes:
+      - ./config/:/config
+    restart: unless-stopped
+    networks:
+      - cyshirc
+      - swag-main-node
+      - web-instance
+  auto-update:
+    image: zxc25077667/cyshirc-simpleweb-auto-update:latest
+    container_name: auto-update
+    environment:
+      - UPDATE_FRONTEND_TOKEN=${UPDATE_FRONTEND_TOKEN}
+      - UPDATE_BACKEND_TOKEN=${UPDATE_BACKEND_TOKEN}
+    volumes:
+      - ./auto-update/flag:/flag
+    restart: unless-stopped
+    networks:
+      - cyshirc
+
+  # 10 台 code server
+  # port on 8443
+  code-server0:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Aisa/Taipei
+    volumes:
+      - ./code-server0/config:/config
+      - ./code-server0/home:/home
+    restart: unless-stopped
+    networks:
+      - cyshirc
+
+  code-server1:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Aisa/Taipei
+    volumes:
+      - ./code-server1/config:/config
+      - ./code-server1/home:/home
+    restart: unless-stopped
+    networks:
+      - cyshirc
+  code-server2:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Aisa/Taipei
+    volumes:
+      - ./code-server2/config:/config
+      - ./code-server2/home:/home
+    restart: unless-stopped
+    networks:
+      - cyshirc
+  code-server3:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Aisa/Taipei
+    volumes:
+      - ./code-server3/config:/config
+      - ./code-server3/home:/home
+    restart: unless-stopped
+    networks:
+      - cyshirc
+  code-server4:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Aisa/Taipei
+    volumes:
+      - ./code-server4/config:/config
+      - ./code-server4/home:/home
+    restart: unless-stopped
+    networks:
+      - cyshirc
+  code-server5:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Aisa/Taipei
+    volumes:
+      - ./code-server5/config:/config
+      - ./code-server5/home:/home
+    restart: unless-stopped
+    networks:
+      - cyshirc
+  code-server6:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Aisa/Taipei
+    volumes:
+      - ./code-server6/config:/config
+      - ./code-server6/home:/home
+    restart: unless-stopped
+    networks:
+      - cyshirc
+  code-server7:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Aisa/Taipei
+    volumes:
+      - ./code-server7/config:/config
+      - ./code-server7/home:/home
+    restart: unless-stopped
+    networks:
+      - cyshirc
+  code-server8:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Aisa/Taipei
+    volumes:
+      - ./code-server8/config:/config
+      - ./code-server8/home:/home
+    restart: unless-stopped
+    networks:
+      - cyshirc
+  code-server9:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Aisa/Taipei
+    volumes:
+      - ./code-server9/config:/config
+      - ./code-server9/home:/home
+    restart: unless-stopped
+    networks:
+      - cyshirc
+
+networks:
+  cyshirc:
+  swag-main-node:
+    - external: true
+  web-instance:

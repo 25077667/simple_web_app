@@ -1,0 +1,25 @@
+version: "3.8"
+
+# 暫時不做 Blue-Green Deployment
+# 開發檢視環境以 failed-fast 取代 rollback
+services:
+
+  # port on 8080
+  web-backend:
+    image: xxxx
+    container_name: web-backend
+    networks:
+      - web-instance
+    restart: unless-stopped
+
+  # port on 8081
+  web-frontend:
+    image: xxxx
+    container_name: web-frontend
+    networks:
+      - web-instance
+    restart: unless-stopped
+
+networks:
+  web-instance:
+    - external: true
