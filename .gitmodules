@@ -1,6 +1,3 @@
-[submodule "frontend"]
-path = frontend
-url = https://github.com/25077667/Django_cpp.git
 [submodule "backend"]
 path = backend
 url = https://github.com/25077667/simple_backend_cpp.git
