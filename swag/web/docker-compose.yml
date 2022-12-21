@@ -9,7 +9,7 @@ services:
     image: zxc25077667/simple-web-backend:latest
     container_name: web-backend
     networks:
-      - web-instance
+      - swag_web-instance
     restart: unless-stopped
 
   # port on 8081
@@ -17,9 +17,9 @@ services:
     image: zxc25077667/simple-web-frontend:latest
     container_name: web-frontend
     networks:
-      - web-instance
+      - swag_web-instance
     restart: unless-stopped
 
 networks:
-  web-instance:
+  swag_web-instance:
     - external: true
