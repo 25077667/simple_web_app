@@ -14,7 +14,7 @@ services:
     restart: unless-stopped
     networks:
       - cyshirc
-      - swag-main-node
+      - swag_main-node
       - web-instance
   auto-update:
     image: zxc25077667/cyshirc-simpleweb-auto-update:latest
@@ -164,6 +164,6 @@ services:
 
 networks:
   cyshirc:
-  swag-main-node:
+  swag_main-node:
     - external: true
   web-instance:
