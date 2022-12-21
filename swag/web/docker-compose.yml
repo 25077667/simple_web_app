@@ -6,7 +6,7 @@ services:
 
   # port on 8080
   web-backend:
-    image: xxxx
+    image: zxc25077667/simple-web-backend:latest
     container_name: web-backend
     networks:
       - web-instance
@@ -14,7 +14,7 @@ services:
 
   # port on 8081
   web-frontend:
-    image: xxxx
+    image: zxc25077667/simple-web-frontend:latest
     container_name: web-frontend
     networks:
       - web-instance
