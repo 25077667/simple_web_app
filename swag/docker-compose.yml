@@ -32,7 +32,7 @@ services:
   # port on 8443
   code-server0:
     image: lscr.io/linuxserver/code-server:latest
-    container_name: code-server
+    container_name: code-server0
     environment:
       - PUID=1000
       - PGID=1000
@@ -46,7 +46,7 @@ services:
 
   code-server1:
     image: lscr.io/linuxserver/code-server:latest
-    container_name: code-server
+    container_name: code-server1
     environment:
       - PUID=1000
       - PGID=1000
@@ -59,7 +59,7 @@ services:
       - cyshirc
   code-server2:
     image: lscr.io/linuxserver/code-server:latest
-    container_name: code-server
+    container_name: code-server2
     environment:
       - PUID=1000
       - PGID=1000
@@ -72,7 +72,7 @@ services:
       - cyshirc
   code-server3:
     image: lscr.io/linuxserver/code-server:latest
-    container_name: code-server
+    container_name: code-server3
     environment:
       - PUID=1000
       - PGID=1000
@@ -85,7 +85,7 @@ services:
       - cyshirc
   code-server4:
     image: lscr.io/linuxserver/code-server:latest
-    container_name: code-server
+    container_name: code-server4
     environment:
       - PUID=1000
       - PGID=1000
@@ -98,7 +98,7 @@ services:
       - cyshirc
   code-server5:
     image: lscr.io/linuxserver/code-server:latest
-    container_name: code-server
+    container_name: code-server5
     environment:
       - PUID=1000
       - PGID=1000
@@ -111,7 +111,7 @@ services:
       - cyshirc
   code-server6:
     image: lscr.io/linuxserver/code-server:latest
-    container_name: code-server
+    container_name: code-server6
     environment:
       - PUID=1000
       - PGID=1000
@@ -124,7 +124,7 @@ services:
       - cyshirc
   code-server7:
     image: lscr.io/linuxserver/code-server:latest
-    container_name: code-server
+    container_name: code-server7
     environment:
       - PUID=1000
       - PGID=1000
@@ -137,7 +137,7 @@ services:
       - cyshirc
   code-server8:
     image: lscr.io/linuxserver/code-server:latest
-    container_name: code-server
+    container_name: code-server8
     environment:
       - PUID=1000
       - PGID=1000
@@ -150,7 +150,7 @@ services:
       - cyshirc
   code-server9:
     image: lscr.io/linuxserver/code-server:latest
-    container_name: code-server
+    container_name: code-server9
     environment:
       - PUID=1000
       - PGID=1000
